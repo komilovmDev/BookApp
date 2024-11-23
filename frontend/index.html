@@ -1,11 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Ranch Book</title>
 </head>
+
+<!-- style swiper -->
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-right: 70px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 760px) {
+        .swiper-button-next {
+            right: 20px;
+            transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+            left: 20px;
+            transform: rotate(90deg);
+        }
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        color: #f23c1c;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        color: #f23c1c;
+    }
+</style>
+
 <body>
-    
+    <div class="container">
+        <nav>
+            <img src="./images/logo.svg" alt="">
+            <div class="navRight">
+                <button>Главное</button>
+                <button>Мои книги</button>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+        <main>
+            <div class="mainHead">
+                <p class="mainHead_title">Все книги</p>
+                <div class="mainHead_categorys">
+                    <button>Психология</button>
+                    <button>Саморазвитие</button>
+                    <button>Нон-фикшн</button>
+                    <button>Романтика</button>
+                    <button>Проза</button>
+                    <button>Детективы</button>
+                    <button>Бизнес</button>
+                    <button>Young Adult</button>
+                    <button>Классика</button>
+                    <button>Фантастика</button>
+                    <button>Фэнтези</button>
+                    <button>История</button>
+                    <button>Биографии и мемуары</button>
+                    <button>Триллеры и хорроры</button>
+                    <button>Здоровье</button>
+                    <button>Бесплатно</button>
+                    <button>Детективы</button>
+                    <button>Бизнес</button>
+                    <button>Young Adult</button>
+                    <button>Классика</button>
+                    <button>Фантастика</button>
+                    <button>Фэнтези</button>
+                    <button>История</button>
+                    <button>Психология</button>
+                    <button>Саморазвитие</button>
+                    <button>Нон-фикшн</button>
+                    <button>Романтика</button>
+                </div>
+            </div>
+            <div class="books">
+                <!-- Swiper -->
+                <div class="swiper">
+                    <p class="titleBoks">Затягивает с первой главы <span>></span></p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/book1.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book2.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book3.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book4.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book5.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book6.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book7.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book8.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper">
+                    <p class="titleBoks">Вам может понравиться<span>></span></p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/book14.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book9.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book10.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book11.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book12.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book13.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book14.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/book5.png" alt="">
+                            <p>Джоджо Мойес</p>
+                            <p>Тонкое искусство пофигизма.…</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 6,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
 </body>
+
 </html>
