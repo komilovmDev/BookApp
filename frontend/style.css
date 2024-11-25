@@ -36,11 +36,21 @@ nav .navRight button {
     border: none;
     background: transparent;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+nav .navRight button a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+nav .navRight button a:hover {
+    color: #f23c1c;
 }
 
 main {
@@ -387,4 +397,119 @@ main .mainHead .mainHead_categorys button:hover {
 .comments_boxes_box_end button i {
     font-size: 22px;
     color: #A7A7A7;
+}
+
+.booksMy {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.booksMy_book {
+    width: 120px;
+    cursor: pointer;
+}
+
+.booksMy_book img {
+    width: 100%;
+    height: 200px;
+}
+
+.booksMy_book span {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    color: #747272;
+    margin: 3px 0;
+    margin-left: 45px;
+}
+
+.title_mybooks {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+}
+
+.booksMy_book p:nth-child(3) {
+    color: #747272;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.booksMy_book p:nth-child(4) {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bookList_title {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+}
+
+.booksLists {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bookList {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.bookList img {
+    width: 80px;
+    height: 115px;
+}
+
+.bookList_texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bookList_texts p:nth-child(1) {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.bookList_texts p:nth-child(2) {
+    font-size: 16px;
+    color: #747272;
+    font-weight: 400;
+}
+
+.bookList button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #747272;
+}
+
+.bookList button:hover {
+    color: #f23c1c;
 }
