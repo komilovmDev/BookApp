@@ -527,3 +527,8 @@ main .mainHead .mainHead_categorys button:hover {
 .bookList button:hover {
     color: #f23c1c;
 }
+
+
+.titleBoks a {
+    color: black;
+}
