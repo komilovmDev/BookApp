@@ -42,19 +42,26 @@
         margin-right: 10px;
     }
 
+    /* 
     .swiper-slide:hover p::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        /* Rasmingizning kengligi */
         height: 300px;
-        /* Rasmingizning balandligi */
         background: rgba(0, 0, 0, 0.214);
         z-index: 1;
         border-radius: 5px;
+    } */
+
+    .swiper-slide:hover img {
+        filter: brightness(0.7);
+        /* 0.7 qiymati rasmni qoraytiradi */
+        transition: filter 0.3s ease;
+        /* Yumuq animatsiya qo'shish uchun */
     }
+
 
     @media (max-width: 760px) {
         .swiper-button-next {
