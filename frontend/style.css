@@ -621,6 +621,7 @@ main .mainHead .mainHead_categorys button:hover {
     color: #747272;
     margin-top: 30px;
     border-radius: 10px;
+    background: #F5F5F5;
 }
 
 .serachInput input {
@@ -630,7 +631,8 @@ main .mainHead .mainHead_categorys button:hover {
     height: 100%;
     padding: 0px 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight:400;
+    background: #F5F5F5;
 }
 
 .serachInput input::placeholder {
@@ -665,6 +667,10 @@ main .mainHead .mainHead_categorys button:hover {
     font-weight: 500;
 }
 
+.randomValu div p:hover {
+    color: black;
+}
+
 .serachCat {
     width: 60%;
     margin: 0 auto;
@@ -672,6 +678,7 @@ main .mainHead .mainHead_categorys button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 30px;
 }
 
 .serachCat_title {
@@ -682,5 +689,29 @@ main .mainHead .mainHead_categorys button:hover {
 .serachCat_btns {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+}
+
+.serachCat_btns button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #DEDEDE;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.serachCat_btns button:hover {
+    transition: .3s all;
+    color: #f23c1c;
+    border: 1px solid #f23c1c;
+}
+
+.serachValue {
+    width: 60%;
+    min-height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
 }
