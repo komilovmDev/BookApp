@@ -608,3 +608,79 @@ main .mainHead .mainHead_categorys button:hover {
     border-radius: 5px;
     padding: 0px 5px;
 }
+
+.serachInput {
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #DEDEDE;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #747272;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.serachInput input {
+    border: none;
+    outline: none;
+    flex: 1;
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.serachInput input::placeholder {
+    color: #A7A7A7;
+}
+
+.randomValu {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.randomValu_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.randomValu div {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.randomValu div p {
+    margin: 0; 
+    white-space: nowrap; 
+    cursor: pointer;
+    color: #747272;
+    font-weight: 500;
+}
+
+.serachCat {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.serachCat_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.serachCat_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
