@@ -715,3 +715,142 @@ main .mainHead .mainHead_categorys button:hover {
     margin-top: 20px;
     background-color: white;
 }
+
+
+.commentPageClose {
+    position: absolute;
+    right: 5%;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cloceProfil {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.cloceProfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.commentPageClose_close {
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.comment {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.comment_title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.comment_texts {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.comment_texts p:nth-child(1) {
+    color: #747272;
+}
+
+.comment_texts p:nth-child(2) {
+    font-weight: 500;
+} 
+
+.comment_textInput {
+    border: 1.5px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F5F5F5;
+}
+
+.comment_textInput .emojis_text {
+    display: flex;
+    gap: 5px;
+}
+
+.comment_textInput .emojis_text button {
+    padding: 7px 10px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.comment_textInput .emojis_text button:hover {
+    background: #e8e8e8;
+}
+
+.comment_textInput textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    font-size: 16px;
+}
+
+.comment_emojes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.comment_emojes button {
+    padding: 7px 10px;
+    border-radius: 25px;
+    border: none;
+    background: #F5F5F5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.comment_emojes button:hover {
+    background: #e8e8e8;
+}
+
+.sendButton {
+    margin-top: 30px;
+    width: 224px;
+    height: 48px;
+    background: #4264fdef;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background: #4264FD;
+}
