@@ -859,3 +859,52 @@ main .mainHead .mainHead_categorys button:hover {
 .com .emoji-button {
     background: white;
 }
+
+.profilBox {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.title_mybooks2 {
+    width: 50%;
+}
+
+
+.title_mybooks2 img {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+}
+
+
+.profilBox_rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profilBox_rigth span {
+    color: #747272;
+    font-size: 14px;
+}
+
+.profilBox_rigth p {
+    color: #22201F;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.profilBox_rigth button {
+    width: 160px;
+    height: 48px;
+    background: #4264FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15.5px;
+    cursor: pointer;
+}
