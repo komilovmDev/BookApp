@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=more_horiz" />
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_horiz" />
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_2" />
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_2" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Ranch Books</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=more_horiz" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_horiz" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_2" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ranch Books</title>
+</head>
+
 <body>
     <div class="container">
         <main>
             <div class="commentPageClose">
                 <button class="cloceProfil">
-                    <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13" alt="">
+                    <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13"
+                        alt="">
                 </button>
                 <button class="commentPageClose_close">
                     <i class="fa-solid fa-xmark"></i>
@@ -38,32 +41,55 @@
                     <p>The Boys: Пацаны. Том 1. Самое главное</p>
                 </div>
                 <div class="comment_textInput">
-                    <div class="emojis_text">
-                        <button>👍 Советую</button>
-                        <button>💧 До слез</button>
-                        <button>🐼 Мило</button>
-                        <button>💤 Скучно</button>
-                    </div>
+                    <div class="emojis_text"></div>
                     <textarea name="" id="" placeholder="Напишите пару строк"></textarea>
                 </div>
                 <div class="comment_emojes">
-                    <button>👍 Советую</button>
-                    <button>👎 Не советую</button>
-                    <button>💧 До слез</button>
-                    <button>🐼 Мило</button>
-                    <button>💤 Скучно</button>
-                    <button>💩 Фуууу</button>
-                    <button>💀 Страшно</button>
-                    <button>🙈 Ничего не понятно</button>
-                    <button>💡 Познавательно</button>
-                    <button>💞 Романтично</button>
-                    <button>🌴 В отпуск</button>
-                    <button>🚀 Не оторваться</button>
-                    <button>😄 Весело</button>
+                    <button class="emoji-button">👍 Советую</button>
+                    <button class="emoji-button">👎 Не советую</button>
+                    <button class="emoji-button">💧 До слез</button>
+                    <button class="emoji-button">🐼 Мило</button>
+                    <button class="emoji-button">💤 Скучно</button>
+                    <button class="emoji-button">💩 Фуууу</button>
+                    <button class="emoji-button">💀 Страшно</button>
+                    <button class="emoji-button">🙈 Ничего не понятно</button>
+                    <button class="emoji-button">💡 Познавательно</button>
+                    <button class="emoji-button">💞 Романтично</button>
+                    <button class="emoji-button">🌴 В отпуск</button>
+                    <button class="emoji-button">🚀 Не оторваться</button>
+                    <button class="emoji-button">😄 Весело</button>
                 </div>
                 <button class="sendButton">Опубликовать</button>
             </div>
         </main>
     </div>
+    <script>
+        const emojiButtons = document.querySelectorAll('.emoji-button');
+        const emojisText = document.querySelector('.emojis_text');
+
+        emojiButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const emojiExists = Array.from(emojisText.children).some(
+                    child => child.textContent === button.textContent
+                );
+
+                // Add emoji if it does not already exist
+                if (!emojiExists) {
+                    const newEmoji = document.createElement('button');
+                    newEmoji.textContent = button.textContent;
+                    newEmoji.classList.add('emoji-item');
+
+                    // Add click event to remove the emoji when clicked
+                    newEmoji.addEventListener('click', () => {
+                        emojisText.removeChild(newEmoji);
+                    });
+
+                    emojisText.appendChild(newEmoji);
+                }
+            });
+        });
+    </script>
 </body>
+
+
 </html>

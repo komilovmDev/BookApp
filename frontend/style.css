@@ -786,6 +786,7 @@ main .mainHead .mainHead_categorys button:hover {
 
 .comment_textInput .emojis_text {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
