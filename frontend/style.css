@@ -855,3 +855,7 @@ main .mainHead .mainHead_categorys button:hover {
 .sendButton:hover {
     background: #4264FD;
 }
+
+.com .emoji-button {
+    background: white;
+}
