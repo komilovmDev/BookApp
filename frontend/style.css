@@ -203,9 +203,9 @@ main .mainHead .mainHead_categorys button:hover {
     content: "";
     position: absolute;
     bottom: .5px;
-    width: 150px;
+    width: 200px;
     height: 4px;
-    background-color: #ff9d00;
+    background-color: #f23c1c;
     z-index: 1;
     border-radius: 4px;
 }
