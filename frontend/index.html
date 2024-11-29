@@ -20,6 +20,8 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ranch Books</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <!-- style swiper -->
@@ -61,15 +63,21 @@
     }
 
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
+        .swiper {
+            padding: 0 10px;
+        }
+
         .swiper-button-next {
             right: 20px;
             transform: rotate(90deg);
+            display: none;
         }
 
         .swiper-button-prev {
             left: 20px;
             transform: rotate(90deg);
+            display: none;
         }
     }
 
@@ -94,8 +102,13 @@
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <button class="navProfil">
-                <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13" alt="">
+                <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13"
+                    alt="">
             </button>
+            <div class="closeBurger">
+                <button id="closeBurger"><i class="fa-solid fa-x"></i></button>
+                <button id="openBurger"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </nav>
         <main>
             <div class="mainHead">
@@ -331,35 +344,64 @@
     </div>
 
 
-
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
+
+        const closebtn = document.getElementById('closeBurger');
+        const openbtn = document.getElementById('openBurger');
+        const navRight = document.querySelector('.navRight');
+
+        // Tugmalarni boshqarish
+        function toggleBurgerButtons() {
+            if (navRight.classList.contains('navRightHidden')) {
+                closebtn.style.display = 'none';
+                openbtn.style.display = 'block';
+            } else {
+                closebtn.style.display = 'block';
+                openbtn.style.display = 'none';
+            }
+        }
+
+        // Bosilganda yashirish
+        closebtn.onclick = () => {
+            navRight.classList.add('navRightHidden');
+            toggleBurgerButtons();
+        };
+
+        // Bosilganda ko'rsatish
+        openbtn.onclick = () => {
+            navRight.classList.remove('navRightHidden');
+            toggleBurgerButtons();
+        };
+
+
         var swiper = new Swiper('.swiper', {
-            slidesPerView: 6,
-            direction: getDirection(),
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
+            breakpoints: {
+                0: { // 0 dan
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                768: { // 768 gacha
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1024: { // 1024 va undan katta uchun
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                },
+                1280: {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
                 },
             },
         });
 
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
-            return direction;
-        }
     </script>
+
 </body>
 
 </html>
