@@ -1103,5 +1103,115 @@ main .mainHead .mainHead_categorys button:hover {
         font-size: 20px;
         margin-left: 10px;
     }
+    .title_mybooks {
+        width: 90%;
+        font-size: 24px;
+    }
 
+    .booksMy {
+        width: 70%;
+        margin: 0 auto;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .bookDetailMain {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .bookImg {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bookInfos_texts {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookInfos_texts p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bookInfos_texts h3 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .bookInfos_texts_buttons {
+        display: flex;
+    }
+
+    .bookInfos_texts_buttons button:nth-child(1) {
+        width: 200px;
+        flex: 1;
+    }
+
+    .gocomment {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .gocomment p {
+        font-size: 18px;
+    }
+
+    .comments {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .bookStstus {
+        display: none;
+    }
+
+    .bookList_title {
+        width: 95%;
+    }
+    .booksLists {
+        width: 95%;
+    }
+    .serachInput {
+        width: 95%;
+    }
+    .serachValue {
+        width: 95%;
+    }
+
+    .serachValue_book {
+        width: 95%;
+    }
+
+    .randomValu {
+        width: 95%;
+    }
+    .serachCat {
+        width: 95%;
+    }
+    .profilBox {
+        width: 90%;
+        flex-direction: column;
+    }
+    .profilBox_rigth {
+        align-items: center;
+    }
+    .profilBox_rigth p {
+        text-align: center;
+    }
+    .comment {
+        width: 95%;
+        margin-top: 100px;
+    }
+    .inputsProfil {
+        width: 95%;
+    }
+    .login {
+        width: 100%;
+        height: 100vh;
+    }
 }
