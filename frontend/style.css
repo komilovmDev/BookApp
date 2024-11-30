@@ -1004,10 +1004,18 @@ main .mainHead .mainHead_categorys button:hover {
 
 #closeBurger {
     display: none;
+    width: 0px;
+    color: white;
+    background-color: transparent;
+    border: none;
 }
 
 #openBurger {
     display: none;
+    height: 0px;
+    color: white;
+    background-color: transparent;
+    border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1074,10 +1082,16 @@ main .mainHead .mainHead_categorys button:hover {
 
     #closeBurger {
         display: block;
+        width: auto;
+        height: auto;
+        color: black;
     }
     
     #openBurger {
         display: none;
+        width: auto;
+        height: auto;
+        color: black;
     }
 
     .navRight button a {

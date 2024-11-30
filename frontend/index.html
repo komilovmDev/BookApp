@@ -349,7 +349,10 @@
         const closebtn = document.getElementById('closeBurger');
         const openbtn = document.getElementById('openBurger');
         const navRight = document.querySelector('.navRight');
-
+        navRight.classList.add('navRightHidden')
+        closebtn.style.display = 'none';
+        openbtn.style.display = 'block';
+        
         // Tugmalarni boshqarish
         function toggleBurgerButtons() {
             if (navRight.classList.contains('navRightHidden')) {
