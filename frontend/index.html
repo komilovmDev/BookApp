@@ -346,13 +346,25 @@
 
     <script>
 
+        // dark light === START
+
+        const tg = window.Telegram.WebApp;
+        function setTheme() {
+            const isDark = tg.themeParams.theme === "dark";
+            document.body.className = isDark ? "dark" : "light";
+        }
+        setTheme();
+        tg.onEvent("themeChanged", setTheme);
+
+        // dark ligth ==== END
+
         const closebtn = document.getElementById('closeBurger');
         const openbtn = document.getElementById('openBurger');
         const navRight = document.querySelector('.navRight');
         navRight.classList.add('navRightHidden')
         closebtn.style.display = 'none';
         openbtn.style.display = 'block';
-        
+
         // Tugmalarni boshqarish
         function toggleBurgerButtons() {
             if (navRight.classList.contains('navRightHidden')) {
@@ -383,15 +395,15 @@
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                0: { // 0 dan
+                0: {
                     slidesPerView: 3,
                     spaceBetween: 0,
                 },
-                768: { // 768 gacha
+                768: {
                     slidesPerView: 3,
                     spaceBetween: 0,
                 },
-                1024: { // 1024 va undan katta uchun
+                1024: {
                     slidesPerView: 6,
                     spaceBetween: 40,
                 },

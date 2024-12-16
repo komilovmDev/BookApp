@@ -9,15 +9,20 @@
     font-family: "Roboto", serif;
 }
 
-body {
+body.lght {
     min-height: 100vh;
+    background-color: white;
+}
+
+body.dark {
+    min-height: 100vh;
+    background-color: red;
 }
 
 .container {
     display: flex;
     flex-direction: column;
 }
-
 nav {
     width: 100%;
     padding: 5px 1%;
@@ -26,12 +31,10 @@ nav {
     align-items: center;
     box-shadow: 0.5px 0.5px 0.5px 1px rgba(0, 0, 0, 0.188);
 }
-
 nav .navRight {
     display: flex;
     gap: 1vw;
 }
-
 nav .navRight button {
     border: none;
     background: transparent;
@@ -42,41 +45,34 @@ nav .navRight button {
     align-items: center;
     justify-content: center;
 }
-
 nav .navRight button a {
     text-decoration: none;
     list-style-type: none;
     color: black;
 }
-
 nav .navRight button a:hover {
     color: #f23c1c;
 }
-
 main {
     width: 1140px;
     margin: 0 auto;
 }
-
 main .mainHead {
     display: flex;
     flex-direction: column;
     margin: 30px 0;
     gap: 10px;
 }
-
 main .mainHead .mainHead_title {
     font-size: 47px;
     font-weight: 500;
 }
-
 main .mainHead .mainHead_categorys {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 3px;
 }
-
 main .mainHead .mainHead_categorys button {
     padding: 3px 10px;
     cursor: pointer;
@@ -85,19 +81,16 @@ main .mainHead .mainHead_categorys button {
     background-color: transparent;
     font-weight: 500;
 }
-
 main .mainHead .mainHead_categorys button:hover {
     transition: .3s all;
     color: #f23c1c;
     border: 1px solid #f23c1c;
 }
-
 .books {
     display: flex;
     flex-direction: column;
     gap: 65px;
 }
-
 .titleBoks {
     font-size: 22px;
     margin: 10px 0;
@@ -108,47 +101,38 @@ main .mainHead .mainHead_categorys button:hover {
     justify-content: start;
     gap: 5px;
 }
-
 .titleBoks span {
     opacity: 0;
     transition: .1s;
     color: #f23c1c;
 }
-
 .titleBoks:hover {
     color: #f23c1c;
     transition: .1s;
 }
-
 .titleBoks:hover span {
     transition: .1s;
     opacity: 1;
 }
-
 .swiper-slide img {
     width: 100%;
     height: 300px;
 }
-
 .swiper-slide p:nth-child(2) {
     text-align: start;
     font-size: 14px;
     color: #747272;
     margin-top: 5px;
 }
-
 .swiper-slide p:nth-child(3) {
     text-align: start;
     font-size: 16px;
     color: #000;
     font-weight: 500;
 }
-
-
 .swiper-slide:hover{
     cursor: pointer;
 }
-
 .swiper-slide:hover p:nth-child(3) {
     transition: all .3s;
     text-align: start;
@@ -157,9 +141,7 @@ main .mainHead .mainHead_categorys button:hover {
     font-weight: 500;
 }
 
-
 /* book deatail style */
-
 
 .bookDetailMain {
     display: flex;
@@ -167,19 +149,15 @@ main .mainHead .mainHead_categorys button:hover {
     margin-top: 50px;
     gap: 20px;
 }
-
-
 .bookImg img {
     width: 200px;
     height: 300px;
 }
-
 .bookStstus {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .bookStstus div {
     position: relative;
     width: 200px;
@@ -187,7 +165,6 @@ main .mainHead .mainHead_categorys button:hover {
     justify-content: space-between;
     padding-bottom: 10px;
 }
-
 .bookStstus div::after {
     content: "";
     position: absolute;
@@ -198,7 +175,6 @@ main .mainHead .mainHead_categorys button:hover {
     z-index: 1;
     border-radius: 4px;
 }
-
 .bookStstus div::before {
     content: "";
     position: absolute;
@@ -209,55 +185,44 @@ main .mainHead .mainHead_categorys button:hover {
     z-index: 1;
     border-radius: 4px;
 }
-
-
 .bookStstus div p {
     font-size: 16px;
     font-weight: 500;
 }
-
 .bookStstus div span {
     font-size: 16px;
     font-weight: 500;
 }
-
 .bookInfos {
     flex: 1;
 }
-
 .bookInfos_texts {
     display: flex;
     flex-direction: column;
 }
-
 .bookInfos_texts p {
     color: #747272;
     font-weight: 500;
 }
-
 .bookInfos_texts b {
     color: black;
 }
-
 .bookInfos_texts h3 {
     font-size: 34px;
     margin-top: 15px;
     font-weight: 500;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 .bookInfos_texts_buttons {
     margin-top: 15px;
     display: flex;
     gap: 10px;
 }
-
 .bookInfos_texts_buttons button {
     font-size: 16px;
     font-weight: 600;
     background-color: #E9E9E9;
 }
-
 .bookInfos_texts_buttons button:nth-child(1) {
     padding: 15px 20px;
     border-radius: 30px;
@@ -266,7 +231,6 @@ main .mainHead .mainHead_categorys button:hover {
     color: white;
     cursor: pointer;
 }
-
 .bookInfos_texts_buttons button:nth-child(2) {
     padding: 13px 18px;
     border-radius: 50%;
@@ -274,7 +238,6 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
     color: #f23c1c;
 } 
-
 .bookInfos_texts_buttons button:nth-child(3) {
     padding: 13px 18px;
     border-radius: 50%;
@@ -282,7 +245,6 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
     color: #f23c1c;
 } 
-
 .gocomment {
     width: 100%;
     height: 80px;
@@ -294,18 +256,15 @@ main .mainHead .mainHead_categorys button:hover {
     padding: 0 20px;
     margin-top: 30px;
 }
-
 .gocomment p {
     font-size: 22px;
     font-weight: 500;
 }
-
 .gocomment .btns {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .gocomment .btns button {
     padding: 10px 30px;
     border-radius: 30px;
@@ -314,34 +273,28 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
     font-size: 18px;
 }
-
 .gocomment .btns button:hover {
     background-color: #eeeeee;
 }
-
 .comments {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 30px;
 }
-
 .comments_title {
     font-size: 22px;
     font-weight: 500;
 }
-
 .comments_title b {
     font-weight: 500;
     color: #a7a7a7;
 }
-
 .comments_boxes {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .comments_boxes_box {
     width: 100%;
     height: auto;
@@ -349,24 +302,20 @@ main .mainHead .mainHead_categorys button:hover {
     padding: 20px;
     border-radius: 10px;
 }
-
 .comments_boxes_box_head {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 5px 0;
 }
-
 .comments_boxes_box_head img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-
 .comments_boxes_box_head .date {
     color: #A7A7A7;
 }
-
 .comments_boxes_box_comment {
     font-size: 20px;
     font-weight: 500;
@@ -374,14 +323,12 @@ main .mainHead .mainHead_categorys button:hover {
     border-bottom: 1px solid #DEDEDE;
     padding-bottom: 10px;
 }
-
 .comments_boxes_box_end {
     margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .comments_boxes_box_end button {
     cursor: pointer;
     border: none;
@@ -393,12 +340,10 @@ main .mainHead .mainHead_categorys button:hover {
     font-weight: 500;
     gap: 4px;
 }
-
 .comments_boxes_box_end button i {
     font-size: 22px;
     color: #A7A7A7;
 }
-
 .booksMy {
     width: 50%;
     margin: 0 auto;
@@ -408,17 +353,14 @@ main .mainHead .mainHead_categorys button:hover {
     margin-bottom: 30px;
     gap: 20px;
 }
-
 .booksMy_book {
     width: 120px;
     cursor: pointer;
 }
-
 .booksMy_book img {
     width: 100%;
     height: 200px;
 }
-
 .booksMy_book span {
     width: 100%;
     font-size: 14px;
@@ -430,7 +372,6 @@ main .mainHead .mainHead_categorys button:hover {
     margin: 3px 0;
     margin-left: 45px;
 }
-
 .title_mybooks {
     width: 60%;
     margin: 0 auto;
@@ -439,19 +380,16 @@ main .mainHead .mainHead_categorys button:hover {
     color: black;
     font-weight: 500;
 }
-
 .booksMy_book p:nth-child(3) {
     color: #747272;
     font-weight: 500;
     font-size: 14px;
 }
-
 .booksMy_book p:nth-child(4) {
     color: #000;
     font-weight: 500;
     font-size: 14px;
 }
-
 .bookList_title {
     width: 60%;
     margin: 0 auto;
@@ -460,7 +398,6 @@ main .mainHead .mainHead_categorys button:hover {
     color: #000;
     font-weight: 500;
 }
-
 .booksLists {
     width: 50%;
     margin: 0 auto;
@@ -469,7 +406,6 @@ main .mainHead .mainHead_categorys button:hover {
     flex-direction: column;
     gap: 0px;
 }
-
 .bookList {
     display: flex;
     align-items: center;
@@ -482,40 +418,33 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
 
 }
-
 .bookList:hover {
     background: #0000000f;
     border-radius: 10px;
 }
-
 .bookList:hover p:nth-child(1) {
     color: #f23c1c;
 }
-
 .bookList img {
     width: 80px;
     height: 115px;
 }
-
 .bookList_texts {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-
 .bookList_texts p:nth-child(1) {
     font-size: 16px;
     color: #000;
     font-weight: 500;
 }
-
 .bookList_texts p:nth-child(2) {
     font-size: 16px;
     color: #747272;
     font-weight: 400;
 }
-
 .bookList button {
     border: none;
     background: transparent;
@@ -523,16 +452,12 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
     color: #747272;
 }
-
 .bookList button:hover {
     color: #f23c1c;
 }
-
-
 .titleBoks a {
     color: black;
 }
-
 .navProfil {
     width: 40px;
     height: 40px;
@@ -547,43 +472,36 @@ main .mainHead .mainHead_categorys button:hover {
     position: absolute;
     right: 2%;
 }
-
 .navProfil img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: contain;
 }
-
 .profilTitle {
     font-size: 34px;
     text-align: center;
     margin-top: 30px;
 }
-
 .profilImgName {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
-
 .profilImgName img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-
 .profilImgName p:nth-child(2) {
     font-size: 20px;
 }
-
 .profilImgName p:nth-child(3) {
     font-size: 13px;
     color: #00000066;
     font-weight: 500;
 }
-
 .inputsProfil {
     display: flex;
     flex-direction: column;
@@ -591,7 +509,6 @@ main .mainHead .mainHead_categorys button:hover {
     width: 40%;
     margin-top: 50px;
 }
-
 .inputsProfil label {
     font-size: 16px;
     color: #000;
@@ -599,7 +516,6 @@ main .mainHead .mainHead_categorys button:hover {
     margin-top: 20px;
     font-weight: 500;
 }
-
 .inputsProfil input {
     width: 100%;
     height: 40px;
@@ -608,7 +524,6 @@ main .mainHead .mainHead_categorys button:hover {
     border-radius: 5px;
     padding: 0px 5px;
 }
-
 .serachInput {
     width: 60%;
     height: 40px;
@@ -623,7 +538,6 @@ main .mainHead .mainHead_categorys button:hover {
     border-radius: 10px;
     background: #F5F5F5;
 }
-
 .serachInput input {
     border: none;
     outline: none;
@@ -634,11 +548,9 @@ main .mainHead .mainHead_categorys button:hover {
     font-weight:400;
     background: #F5F5F5;
 }
-
 .serachInput input::placeholder {
     color: #A7A7A7;
 }
-
 .randomValu {
     width: 60%;
     margin: 0 auto;
@@ -647,18 +559,15 @@ main .mainHead .mainHead_categorys button:hover {
     gap: 20px;
     margin-top: 20px;
 }
-
 .randomValu_title {
     font-size: 20px;
     font-weight: 500;
 }
-
 .randomValu div {
     display: flex; 
     flex-wrap: wrap; 
     gap: 10px; 
 }
-
 .randomValu div p {
     margin: 0; 
     white-space: nowrap; 
@@ -666,11 +575,9 @@ main .mainHead .mainHead_categorys button:hover {
     color: #747272;
     font-weight: 500;
 }
-
 .randomValu div p:hover {
     color: black;
 }
-
 .serachCat {
     width: 60%;
     margin: 0 auto;
@@ -680,18 +587,15 @@ main .mainHead .mainHead_categorys button:hover {
     gap: 10px;
     padding-bottom: 30px;
 }
-
 .serachCat_title {
     font-size: 20px;
     font-weight: 500;
 }
-
 .serachCat_btns {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-
 .serachCat_btns button {
     padding: 5px 10px;
     cursor: pointer;
@@ -701,13 +605,11 @@ main .mainHead .mainHead_categorys button:hover {
     font-weight: 500;
     font-size: 14px;
 }
-
 .serachCat_btns button:hover {
     transition: .3s all;
     color: #f23c1c;
     border: 1px solid #f23c1c;
 }
-
 .serachValue {
     width: 60%;
     min-height: auto;
@@ -715,8 +617,6 @@ main .mainHead .mainHead_categorys button:hover {
     margin-top: 20px;
     background-color: white;
 }
-
-
 .commentPageClose {
     position: absolute;
     right: 5%;
@@ -725,7 +625,6 @@ main .mainHead .mainHead_categorys button:hover {
     align-items: center;
     gap: 20px;
 }
-
 .cloceProfil {
     width: 50px;
     height: 50px;
@@ -734,46 +633,38 @@ main .mainHead .mainHead_categorys button:hover {
     cursor: pointer;
     border: 1px solid black;
 }
-
 .cloceProfil img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
-
 .commentPageClose_close {
     background: transparent;
     border: none;
     font-size: 26px;
     cursor: pointer;
 }
-
 .comment {
     width: 50%;
     margin: 0 auto;
     margin-top: 30px;
 }
-
 .comment_title {
     font-size: 24px;
     font-weight: 500;
 }
-
 .comment_texts {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-
 .comment_texts p:nth-child(1) {
     color: #747272;
 }
-
 .comment_texts p:nth-child(2) {
     font-weight: 500;
 } 
-
 .comment_textInput {
     border: 1.5px solid #DEDEDE;
     border-radius: 5px;
@@ -783,13 +674,11 @@ main .mainHead .mainHead_categorys button:hover {
     gap: 10px;
     background-color: #F5F5F5;
 }
-
 .comment_textInput .emojis_text {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-
 .comment_textInput .emojis_text button {
     padding: 7px 10px;
     border-radius: 25px;
@@ -801,11 +690,9 @@ main .mainHead .mainHead_categorys button:hover {
     justify-content: center;
     font-size: 16px;
 }
-
 .comment_textInput .emojis_text button:hover {
     background: #e8e8e8;
 }
-
 .comment_textInput textarea {
     background-color: transparent;
     border: none;
@@ -816,14 +703,12 @@ main .mainHead .mainHead_categorys button:hover {
     min-height: 200px;
     font-size: 16px;
 }
-
 .comment_emojes {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-
 .comment_emojes button {
     padding: 7px 10px;
     border-radius: 25px;
@@ -835,11 +720,9 @@ main .mainHead .mainHead_categorys button:hover {
     justify-content: center;
     font-size: 16px;
 }
-
 .comment_emojes button:hover {
     background: #e8e8e8;
 }
-
 .sendButton {
     margin-top: 30px;
     width: 224px;
@@ -851,15 +734,12 @@ main .mainHead .mainHead_categorys button:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .sendButton:hover {
     background: #4264FD;
 }
-
 .com .emoji-button {
     background: white;
 }
-
 .profilBox {
     width: 87%;
     margin: 0 auto;
@@ -868,36 +748,28 @@ main .mainHead .mainHead_categorys button:hover {
     align-items: center;
     gap: 30px;
 }
-
 .title_mybooks2 {
     width: 50%;
 }
-
-
 .title_mybooks2 img {
     width: 176px;
     height: 176px;
     border-radius: 50%;
 }
-
-
 .profilBox_rigth {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 .profilBox_rigth span {
     color: #747272;
     font-size: 14px;
 }
-
 .profilBox_rigth p {
     color: #22201F;
     font-size: 36px;
     font-weight: 500;
 }
-
 .profilBox_rigth button {
     width: 160px;
     height: 48px;
@@ -908,7 +780,6 @@ main .mainHead .mainHead_categorys button:hover {
     font-size: 15.5px;
     cursor: pointer;
 }
-
 .loginBoox {
     width: 100%;
     height: 100vh;
@@ -918,7 +789,6 @@ main .mainHead .mainHead_categorys button:hover {
     justify-content: center;
     gap: 20px;
 }
-
 .login {
     width: 400px;
     height: auto;
@@ -931,24 +801,20 @@ main .mainHead .mainHead_categorys button:hover {
     border-radius: 10px;
     box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.063);
 }
-
 .login_title {
     font-size: 28px;
     font-weight: 500;
 }
-
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .login label {
     margin-top: 20px;
     font-size: 16px;
 }
-
 .login input {
     width: 100%;
     height: 40px;
@@ -957,7 +823,6 @@ main .mainHead .mainHead_categorys button:hover {
     border: 1px solid black;
     background: transparent;
 }
-
 .login button {
     width: 100%;
     height: 40px;
@@ -968,25 +833,20 @@ main .mainHead .mainHead_categorys button:hover {
     border: none;
     font-size: 18px;
 }
-
 .login button:hover {
     background: #f22c1c;
 }
-
 .login button:active {
     transform: scale(0.99);
 }
-
 .login span {
     display: flex;
     gap: 4px;
 }
-
 .otp-container {
     display: flex;
     gap: 10px;
 }
-
 .otp-container input {
     width: 50px;
     height: 50px;
@@ -997,11 +857,9 @@ main .mainHead .mainHead_categorys button:hover {
     outline: none;
     transition: border-color 0.2s;
 }
-
 .otp-container input:focus {
     border-color: #f23c1c;
 }
-
 #closeBurger {
     display: none;
     width: 0px;
@@ -1009,7 +867,6 @@ main .mainHead .mainHead_categorys button:hover {
     background-color: transparent;
     border: none;
 }
-
 #openBurger {
     display: none;
     height: 0px;
@@ -1017,29 +874,24 @@ main .mainHead .mainHead_categorys button:hover {
     background-color: transparent;
     border: none;
 }
-
 @media screen and (max-width: 768px) {
     nav {
         width: 100%;
         height: 40px;
         padding: 40px 10px;
     }
-
     main  {
         width: 100%;
     }
-
     main .mainHead {
         width: 100%;
     }
-
     main .mainHead .mainHead_categorys {
         width: 100%;
         height: 150px;
         gap: 2px;
         overflow-y: auto;
     }
-
     main .mainHead .mainHead_categorys button {
         font-size: 18px;
         padding: 10px;
@@ -1057,11 +909,9 @@ main .mainHead .mainHead_categorys button:hover {
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.074);
         padding: 0px 5px;
     }
-
     .navProfil {
         right: 15%;
     }
-
     .closeBurger {
         position: absolute;
         right: 6%;
@@ -1069,36 +919,30 @@ main .mainHead .mainHead_categorys button:hover {
         align-items: center;
         justify-content: center;
     }
-
     .closeBurger button {
         font-size: 22px;
         background: none;
         border: none;
     }
-
     .navRightHidden {
         top: -300px;
     }
-
     #closeBurger {
         display: block;
         width: auto;
         height: auto;
         color: black;
     }
-    
     #openBurger {
         display: none;
         width: auto;
         height: auto;
         color: black;
     }
-
     .navRight button a {
         font-size: 18px;
         margin: 0 5px;
     }
-
     .navRight button i {
         font-size: 20px;
         margin-left: 10px;
@@ -1107,7 +951,6 @@ main .mainHead .mainHead_categorys button:hover {
         width: 90%;
         font-size: 24px;
     }
-
     .booksMy {
         width: 70%;
         margin: 0 auto;
@@ -1118,7 +961,6 @@ main .mainHead .mainHead_categorys button:hover {
         flex-direction: column;
         margin-top: 20px;
     }
-
     .bookImg {
         width: 100%;
         display: flex;
@@ -1132,44 +974,35 @@ main .mainHead .mainHead_categorys button:hover {
         align-items: center;
         justify-content: center;
     }
-
     .bookInfos_texts p {
         width: 100%;
         text-align: center;
     }
-
     .bookInfos_texts h3 {
         text-align: center;
         font-size: 23px;
     }
-
     .bookInfos_texts_buttons {
         display: flex;
     }
-
     .bookInfos_texts_buttons button:nth-child(1) {
         width: 200px;
         flex: 1;
     }
-
     .gocomment {
         width: 95%;
         margin: 20px auto;
     }
-
     .gocomment p {
         font-size: 18px;
     }
-
     .comments {
         width: 95%;
         margin: 0 auto;
     }
-
     .bookStstus {
         display: none;
     }
-
     .bookList_title {
         width: 95%;
     }
@@ -1182,11 +1015,9 @@ main .mainHead .mainHead_categorys button:hover {
     .serachValue {
         width: 95%;
     }
-
     .serachValue_book {
         width: 95%;
     }
-
     .randomValu {
         width: 95%;
     }
