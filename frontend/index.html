@@ -24,14 +24,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<!-- style swiper -->
 <style>
     .swiper {
-        width: 100%;
+        width: 100%;    
         height: 100%;
         padding-right: 70px;
     }
-
     .swiper-slide {
         display: flex;
         flex-direction: column;
@@ -43,37 +41,19 @@
         align-items: start;
         margin-right: 10px;
     }
-
-    /* 
-    .swiper-slide:hover p::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 300px;
-        background: rgba(0, 0, 0, 0.214);
-        z-index: 1;
-        border-radius: 5px;
-    } */
-
     .swiper-slide:hover img {
         filter: brightness(0.7);
         transition: filter 0.3s ease;
     }
-
-
     @media (max-width: 768px) {
         .swiper {
             padding: 0 10px;
         }
-
         .swiper-button-next {
             right: 20px;
             transform: rotate(90deg);
             display: none;
         }
-
         .swiper-button-prev {
             left: 20px;
             transform: rotate(90deg);
@@ -90,6 +70,8 @@
     .swiper-rtl .swiper-button-next {
         color: #f23c1c;
     }
+
+    
 </style>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
@@ -100,11 +82,11 @@
             <div class="navRight">
                 <button><a href="/frontend/index.html">Главное</a></button>
                 <button><a href="/frontend/moyBooks.html">Мои книги</a></button>
+                <button><a href="/frontend/moyBooks.html">Аудио</a></button>
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <button class="navProfil">
-                <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13"
-                    alt="">
+                <img src="https://avatars.mds.yandex.net/i?id=0776231b03a42500ffe93a58496a86ddb08ab983-5252031-images-thumbs&n=13" alt="">
             </button>
             <div class="closeBurger">
                 <button id="closeBurger"><i class="fa-solid fa-x"></i></button>
@@ -112,12 +94,14 @@
             </div>
         </nav>
         <main>
-            <swiper-container class="mySwiper2" slides-per-view="1" pagination="true" pagination-clickable="true" navigation="false"
-                space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-container class="mySwiper2" slides-per-view="1" pagination="true" pagination-clickable="false"
+                navigation="false" space-between="30" centered-slides="true" autoplay-delay="2500"
+                autoplay-disable-on-interaction="false">
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book1.png" alt="">
@@ -125,7 +109,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book2.png" alt="">
@@ -133,7 +118,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book3.png" alt="">
@@ -141,7 +127,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book4.png" alt="">
@@ -149,7 +136,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book5.png" alt="">
@@ -157,7 +145,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book6.png" alt="">
@@ -165,7 +154,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book7.png" alt="">
@@ -173,7 +163,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book8.png" alt="">
@@ -181,7 +172,8 @@
                 <swiper-slide>
                     <div class="mySwiper2_title">
                         <p>Джоджо Мойес</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum inventore quo minus iure tenetur culpa asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem modi molestiae ipsum
+                            inventore quo minus iure tenetur culpa asperiores.</p>
                         <button>O'qish</button>
                     </div>
                     <img src="./images/book9.png" alt="">
@@ -268,7 +260,6 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-
                 <!-- Swiper -->
                 <div class="swiper">
                     <p class="titleBoks">Вам может понравиться<span>></span></p>
@@ -317,7 +308,6 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-
                 <div class="swiper">
                     <p class="titleBoks">Затягивает с первой главы <span>></span></p>
                     <div class="swiper-wrapper">
@@ -365,7 +355,6 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-
                 <!-- Swiper -->
                 <div class="swiper">
                     <p class="titleBoks">Вам может понравиться<span>></span></p>
@@ -414,7 +403,6 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-
             </div>
         </main>
     </div>
@@ -424,11 +412,11 @@
         const closebtn = document.getElementById('closeBurger');
         const openbtn = document.getElementById('openBurger');
         const navRight = document.querySelector('.navRight');
-        navRight.classList.add('navRightHidden')
+        navRight.classList.add('navRightHidden');
         closebtn.style.display = 'none';
         openbtn.style.display = 'block';
 
-        // Tugmalarni boshqarish
+
         function toggleBurgerButtons() {
             if (navRight.classList.contains('navRightHidden')) {
                 closebtn.style.display = 'none';
@@ -439,13 +427,13 @@
             }
         }
 
-        // Bosilganda yashirish
+
         closebtn.onclick = () => {
             navRight.classList.add('navRightHidden');
             toggleBurgerButtons();
         };
 
-        // Bosilganda ko'rsatish
+
         openbtn.onclick = () => {
             navRight.classList.remove('navRightHidden');
             toggleBurgerButtons();

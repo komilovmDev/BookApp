@@ -9,11 +9,17 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Ranch Book</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=more_horiz" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_horiz" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_2" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_2" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=more_horiz" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_horiz" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_2" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -35,7 +41,8 @@
                     <p><b>Впечатления и отзывы о книге автора  </b>Алексей Алёхин</p>
                     <h3>Мясорубка. Как Россия полюбила кровавый спорт</h3>
                     <div class="bookInfos_texts_buttons">
-                        <button>Читать</button>
+                        <button id="chitatBtn">Читать</button>
+                        <button id="audioBtn">Аудио</button>
                         <button><i class="fa-solid fa-ellipsis"></i></button>
                         <button><i class="fa-solid fa-plus"></i></button>
                     </div>
@@ -61,7 +68,8 @@
                                 <button class="emoji-button">💧 До слез</button>
                                 <button class="emoji-button">🐼 Мило</button>
                             </div>
-                            <p class="comments_boxes_box_comment">Только у меня в текстовой версии вместо этой книги другая «Всем Иран»?</p>
+                            <p class="comments_boxes_box_comment">Только у меня в текстовой версии вместо этой книги
+                                другая «Всем Иран»?</p>
                             <div class="comments_boxes_box_end">
                                 <button><i class="fa-regular fa-heart"></i>Нравится</button>
                                 <button><i class="fa-solid fa-ellipsis"></i></button>
@@ -85,7 +93,10 @@
                                 <b class="name">СТАНИСЛАВ КОЛОДОВ</b>
                                 <p class="date">делится впечатлением • 20 часов назад</p>
                             </div>
-                            <p class="comments_boxes_box_comment">Нельзя сдаваться! Никогда нельзя ) мне кажется, что это главный посыл в книге. В этой замечательной, доброй истории столько оптимизма, что начинаешь рыться в себе, и понимать насколько у тебя все хорошо и как нелегко приходится другим. Давайте ценить то хорошее, чего у нас, на самом то деле, полным полно )))</p>
+                            <p class="comments_boxes_box_comment">Нельзя сдаваться! Никогда нельзя ) мне кажется, что
+                                это главный посыл в книге. В этой замечательной, доброй истории столько оптимизма, что
+                                начинаешь рыться в себе, и понимать насколько у тебя все хорошо и как нелегко приходится
+                                другим. Давайте ценить то хорошее, чего у нас, на самом то деле, полным полно )))</p>
                             <div class="comments_boxes_box_end">
                                 <button><i class="fa-regular fa-heart"></i>Нравится</button>
                                 <button><i class="fa-solid fa-ellipsis"></i></button>
@@ -111,8 +122,132 @@
                     <span>1</span>
                 </div>
             </div>
+            <div class="audioBook none">
+                <audio id="audio" style="display: none;">
+                    <source src="./audio/annaasti.mp3" />
+                </audio>
+
+                <div class="custom-player">
+                    <button id="rewindButton">
+                        <i class="fas fa-undo"></i>
+                    </button>
+                    <button id="playButton">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="forwardButton">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                    <input type="range" id="progressBar" min="0" max="100" value="0">
+                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="1">
+                    </div>
+                    <select id="playbackRate">
+                        <option value="0.5">0.5x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+            </div>
         </main>
     </div>
 </body>
+
+<script>
+    const audio = document.getElementById('audio');
+    const playButton = document.getElementById('playButton');
+    const rewindButton = document.getElementById('rewindButton');
+    const forwardButton = document.getElementById('forwardButton');
+    const progressBar = document.getElementById('progressBar');
+    const currentTimeDisplay = document.getElementById('currentTime');
+    const durationDisplay = document.getElementById('duration');
+    const volumeBar = document.getElementById('volumeBar');
+    const playbackRate = document.getElementById('playbackRate');
+    const playIcon = playButton.querySelector('i');
+    const audioBtn = document.getElementById('audioBtn');
+    const chitatBtn = document.getElementById('chitatBtn');
+
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+
+    function updateProgressBackground(range, value) {
+        const percentage = value * 100;
+        range.style.background = `linear-gradient(to right, #f22c1c ${percentage}%, lightgray ${percentage}%)`; // Yashil rang (to'ldirilgan)
+    }
+
+
+    playButton.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            playIcon.className = 'fas fa-pause';
+        } else {
+            audio.pause();
+            playIcon.className = 'fas fa-play';
+        }
+    });
+
+
+    rewindButton.addEventListener('click', () => {
+        audio.currentTime = Math.max(0, audio.currentTime - 15);
+    });
+
+    forwardButton.addEventListener('click', () => {
+        audio.currentTime = Math.min(audio.duration, audio.currentTime + 15);
+    });
+
+
+    audio.addEventListener('timeupdate', () => {
+        const progressValue = audio.currentTime / audio.duration;
+        progressBar.value = progressValue * 100;
+        currentTimeDisplay.textContent = formatTime(audio.currentTime);
+        updateProgressBackground(progressBar, progressValue);
+    });
+
+
+    audio.addEventListener('loadedmetadata', () => {
+        durationDisplay.textContent = formatTime(audio.duration);
+    });
+
+
+    progressBar.addEventListener('input', (e) => {
+        const value = e.target.value / 100;
+        audio.currentTime = value * audio.duration;
+        updateProgressBackground(progressBar, value);
+    });
+
+
+    volumeBar.addEventListener('input', (e) => {
+        const value = e.target.value;
+        audio.volume = value;
+        updateProgressBackground(volumeBar, value);
+    });
+
+
+    playbackRate.addEventListener('change', (e) => {
+        audio.playbackRate = e.target.value;
+    });
+
+    audioBtn.onclick = () => {
+        document.querySelector('.audioBook').classList.remove('none')
+    }
+    
+    chitatBtn.onclick = () => {
+        document.querySelector('.audioBook').classList.add('none')
+    }
+
+
+    updateProgressBackground(progressBar, 0);
+    updateProgressBackground(volumeBar, 1);
+
+</script>
+
+<style>
+
+</style>
 
 </html>
